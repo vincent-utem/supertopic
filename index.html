@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>专题2.0_页面即时编辑</title>
+    <link type="text/css" href="http://cdn.bootcss.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" />
+    <link type="text/css" href="http://zy.qushi.com.cn/topic/base.css" rel="stylesheet" />
+    <link type="text/css" href="style/topic_frame.css" rel="stylesheet" />
+    <link type="text/css" href="style/css.css" rel="stylesheet" />
+    <link type="text/css" href="style/dialog.css" rel="stylesheet" />
+    <script type="text/javascript" src="http://www.qushi.com.cn/Scripts/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/dialog.js"></script>
+    <script type="text/javascript" src="js/superpage.js"></script>
+    <script type="text/javascript" src="js/superframe.js"></script>
+    <script type="text/javascript" src="js/superarea.js"></script>
+    <script type="text/javascript" src="js/topiceditor.js"></script>
+</head>
+<body>
+    <div id="topicedit_toparea" class="topicedit_top topicedit_menubg">
+        <h1>英国欧谈判出师不利 敢问路在何方？</h1><!--data from server-->
+        <ul>
+            <li><a href="javascript:;">[编辑]</a></li>
+            <li><a href="javascript:;">[预览]</a></li>
+        </ul>
+        <ul>
+            <li>
+                页面宽度：
+                <select id="topicedit_pageWidthSelect">
+                    <option value="1000" selected="selected">1000px</option>
+                    <option value="1200">1200px</option>
+                </select>
+            </li>
+            <li>
+                列间比例：
+                <select id="topicedit_columnPropSelect">
+                    <option value="3:4:3">3:4:3</option>
+                    <option value="3:3:4">3:3:4</option>
+                    <option value="4:3:3">4:3:3</option>
+                </select>
+            </li>
+        </ul>
+    </div>
+    <div class="topicedit_container">
+        <div id="topicedit_elemenu" class="elemenu">
+            <div class="elemenu_moveup icon-caret-up"></div>
+            <ul>
+                <!--<li>
+                    <a href="javascript:;" val="1" rel="frame">
+                        <i class="icon-reorder"></i>
+                        <span>通栏框架</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" val="2" rel="frame">
+                        <i class="icon-th-large"></i>
+                        <span>双列框架</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" val="3" rel="frame">
+                        <i class="icon-th"></i>
+                        <span>三列框架</span>
+                    </a>
+                </li>
+                <li class="elemenugap"></li>
+                <li>
+                    <a href="javascript:;" val="0" rel="element">
+                        <i class="icon-magnet"></i>
+                        <span>Banner</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" val="1" rel="element">
+                        <i class="icon-info-sign"></i>
+                        <span>专题导语</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" val="2" rel="element">
+                        <i class="icon-tasks"></i>
+                        <span>专题导航</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" val="3" rel="element">
+                        <i class="icon-list"></i>
+                        <span>图文列表</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" val="4" rel="element">
+                        <i class="icon-time"></i>
+                        <span>时间轴</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" val="5" rel="element">
+                        <i class="icon-picture"></i>
+                        <span>图片元素</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" val="6" rel="element">
+                        <i class="icon-file-alt"></i>
+                        <span>自由文字</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" val="7" rel="element">
+                        <i class="icon-credit-card"></i>
+                        <span>头条列表</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" val="8" rel="element">
+                        <i class="icon-table"></i>
+                        <span>表格文字</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" val="9" rel="element">
+                        <i class="icon-list-ol"></i>
+                        <span>行情列表</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" val="10" rel="element">
+                        <i class="icon-bar-chart"></i>
+                        <span>H5行情图</span>
+                    </a>
+                </li>-->
+            </ul>
+            <div class="elemenu_movedown icon-caret-down"></div>
+        </div>
+        <div id="topicedit_editarea" class="editarea"></div>
+
+        <div class="clear"></div>
+    </div>
+
+    <div id="topicedit_editform" class="topicedit_editfrom topicedit_menubg topicedit_editfromclose">
+        <div class="handle">
+            <a href="javascript:;">
+                <i></i>
+            </a>
+        </div>
+        <div class="formarea">
+            <iframe id="topicedit_frameMain" name="topicedit_frameMain" src="http://p.qushi.com.cn/" style="margin: 0px;background:#fff; border: none; width: 100%; height: 100%;overflow:hidden;"></iframe>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <!--<div id="dragele" class="topicedit_dragele">
+        <a href="javascript:;">
+            <i class="timeline"></i>
+            <span>时间轴</span>
+        </a>
+    </div>-->
+
+</body>
+</html>
+<script type="text/javascript">
+    $(function () {
+        TopicEditor.Api.LoadEndCallback = function () {
+            console.log("TopicEditor对象加载成功");
+        };
+        TopicEditor.Api.EleMenu.DragBefore = function (e, dtype, dval, dtext) {
+            if (dtype == "frame")
+                console.log("选择 " + dtext + "（" + dval + "列框架） 开始...");
+            else
+                console.log("选择 " + dtext + "（" + dval + "） 元素开始...");
+        };
+
+        TopicEditor.Api.EleMenu.DragEnd = function (e, dtype, dval, dtext, frameIndex, apIndex) {
+            if (dtype == "frame") {
+                if (frameIndex == -2)
+                    console.log("选择 " + dtext + "（" + dval + "列框架） ——> 未执行任何添操作");
+                else if (frameIndex == -1)
+                    console.log("选择 " + dtext + "（" + dval + "列框架） ——> 添加到专题编辑区中");
+                else
+                    console.log("选择 " + dtext + "（" + dval + "列框架） ——> 添加到框架（index=" + frameIndex + "）之后");
+            }
+            else {
+                if (frameIndex > -1 && apIndex > -1)
+                    console.log("选择 " + dtext + "（" + dval + "） 元素——> 添加到框架（index=" + frameIndex + "）的第" + apIndex + "个区块中");
+                else
+                    console.log("选择 " + dtext + "（" + dval + "） 元素——> 未执行任何添操作");
+            }
+                
+        };
+
+        TopicEditor.Init();
+        $(window).resize(function () {
+            TopicEditor.Auto(TopicEditor.SuperPage.getFramesHeight());
+        });
+
+        $("#tempopen").click(function () {
+            TopicEditor.Api.EditForm.Open("http://" + $("#tempurl").val());
+        });
+
+        $("#tempclose").click(function () {
+            TopicEditor.Api.EditForm.Close();
+        });
+
+
+
+    });
+</script>

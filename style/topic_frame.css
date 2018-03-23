@@ -1,0 +1,91 @@
+﻿.topic_frame {
+    display:block;
+    width:100%;
+}
+    .topic_frame > .topic_w1000, .topic_frame > .topic_w1200 {
+        margin:0 auto;
+        width:1000px;
+    }
+    .topic_frame > .topic_w1200 {
+        width:1200px;
+        margin:0 auto;
+    }
+        .topic_frame > .topic_w1000 .topic_3_w_3 {
+            width:300px;
+        }
+        .topic_frame > .topic_w1000 .topic_3_w_4 {
+            width:400px;
+        }
+        .topic_frame > .topic_w1200 .topic_3_w_3 {
+            width:360px;
+        }
+        .topic_frame > .topic_w1200 .topic_3_w_4 {
+            width:480px;
+        }
+        .topic_frame > .topic_w1000 .topic_3_c_4_3 {
+            margin:0 410px 0 310px;
+        }
+        .topic_frame > .topic_w1000 .topic_3_c_3_4 {
+            margin:0 310px 0 410px;
+        }
+        .topic_frame > .topic_w1000 .topic_3_c_3_3 {
+            margin:0 310px 0 310px;
+        }
+        .topic_frame > .topic_w1200 .topic_3_c_4_3 {
+            margin:0 490px 0 370px;
+        }
+        .topic_frame > .topic_w1200 .topic_3_c_3_4 {
+            margin:0 370px 0 490px;
+        }
+        .topic_frame > .topic_w1200 .topic_3_c_3_3 {
+            margin:0 370px 0 370px;
+        }
+
+        .topic_frame > .topic_w1000 .topic_2_w_3 {
+            width:300px;
+        }
+        .topic_frame > .topic_w1000 .topic_2_w_4 {
+            width:400px;
+        }
+        .topic_frame > .topic_w1000 .topic_2_w_5 {
+            width:495px;
+        }
+        .topic_frame > .topic_w1000 .topic_2_w_6 {
+            width:590px;
+        }
+        .topic_frame > .topic_w1000 .topic_2_w_7 {
+            width:690px;
+        }
+        .topic_frame > .topic_w1200 .topic_2_w_3 {
+            width:360px;
+        }
+        .topic_frame > .topic_w1200 .topic_2_w_4 {
+            width:480px;
+        }
+        .topic_frame > .topic_w1200 .topic_2_w_5 {
+            width:595px;
+        }
+        .topic_frame > .topic_w1200 .topic_2_w_6 {
+            width:710px;
+        }
+        .topic_frame > .topic_w1200 .topic_2_w_7 {
+            width:830px;
+        }
+    .topic_frame .topic_floatleft {
+        float:left;
+    }
+    .topic_frame .topic_floatright {
+        float:right;
+    }
+    .topic_frame .topic_center {
+    }
+    .topic_frame .topic_area {
+        width:100%;
+        margin-bottom:10px;
+    }
+        .topic_frame .topic_area .topic_elementcont {
+            min-height:30px;
+        }
+        .topic_frame .topic_area .topic_areamask {
+            display:none;
+        }
